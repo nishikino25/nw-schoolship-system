@@ -1,26 +1,38 @@
 @import "global";
 
 .nav {
-  .title {
-    background-color: $secondary-color;
-    padding: 10px;
+  /* RWD settings */
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  /* RWD settings (end) */
 
-    .menu-toggle {
+  .nav-head {
+    background-color: $secondary-color;
+
+    .pc-background {
+      padding: 10px;
+    }
+
+    .system-name {
       display: flex;
+      margin-top: 10px;
 
       p {
+        flex-grow: 1;
         color: $info-color;
         font-size: 18px;
-        margin-top: 10px;
-        flex-grow: 1;
       }
 
-      #toggle-button {
+      #mobile-menu-toggle-button {
         background-color: transparent;
         background-image: url("../img/nav/hambuger.svg");
         border: 0;
-        width: 24px;
-        height: 24px;
+        width: 18px;
+        height: 18px;
 
         &.close {
           background-image: url("../img/nav/close.svg");
@@ -29,7 +41,7 @@
     }
   }
 
-  #menu {
+  #mobile-nav-body {
     &.hidden {
       display: none;
     }
@@ -65,19 +77,57 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    .title {
-      display: flex;
+  @media screen and (min-width: 992px) {
+    /* RWD settings */
+    .pc {
+      display: block;
     }
+    .mobile {
+      display: none;
+    }
+    /* RWD settings (end) */
 
-    .info {
+    .nav-head {
+      background-color: $backgound-color;
+      height: 80px;
       display: flex;
+      align-items: center;
+
+      .pc-background {
+        display: flex;
+        align-items: center;
+        background-color: $secondary-color;
+        height: 60px;
+        border-radius: 0 80px 80px 0;
+        padding-left: 5%;
+
+        img {
+          height: 28px;
+        }
+
+        .system-name {
+          margin-top: 0;
+
+          p {
+            margin: 0 30px;
+            font-size: 24px;
+          }
+        }
+      }
 
       .profile {
         display: flex;
-        & > * {
+        flex-grow: 1;
+        justify-content: flex-end;
+        margin-right: 5%;
+
+        p {
           margin-right: 20px;
           color: $primary-color;
+        }
+
+        #logout {
+          color: $secondary-color;
         }
       }
     }

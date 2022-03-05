@@ -137,91 +137,149 @@ a {
   text-decoration: none;
 }
 
-.nav .title {
+.nav {
+  /* RWD settings */
+  /* RWD settings (end) */
+}
+
+.nav .pc {
+  display: none;
+}
+
+.nav .mobile {
+  display: block;
+}
+
+.nav .nav-head {
   background-color: #1e1e1e;
+}
+
+.nav .nav-head .pc-background {
   padding: 10px;
 }
 
-.nav .title .menu-toggle {
+.nav .nav-head .system-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10px;
 }
 
-.nav .title .menu-toggle p {
-  color: #9a9084;
-  font-size: 18px;
-  margin-top: 10px;
+.nav .nav-head .system-name p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  color: #9a9084;
+  font-size: 18px;
 }
 
-.nav .title .menu-toggle #toggle-button {
+.nav .nav-head .system-name #mobile-menu-toggle-button {
   background-color: transparent;
   background-image: url("../img/nav/hambuger.svg");
   border: 0;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
-.nav .title .menu-toggle #toggle-button.close {
+.nav .nav-head .system-name #mobile-menu-toggle-button.close {
   background-image: url("../img/nav/close.svg");
 }
 
-.nav #menu {
+.nav #mobile-nav-body {
   text-align: center;
   -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   padding: 30px;
 }
 
-.nav #menu.hidden {
+.nav #mobile-nav-body.hidden {
   display: none;
 }
 
-.nav #menu .functional-tabs {
+.nav #mobile-nav-body .functional-tabs {
   border-bottom: #9a9084 2px solid;
 }
 
-.nav #menu .functional-tabs > * {
+.nav #mobile-nav-body .functional-tabs > * {
   display: block;
   margin-bottom: 20px;
   color: #1e1e1e;
 }
 
-.nav #menu .functional-tabs > *.active {
+.nav #mobile-nav-body .functional-tabs > *.active {
   color: #9f784f;
 }
 
-.nav #menu .profile > * {
+.nav #mobile-nav-body .profile > * {
   display: block;
   margin: 20px 0;
   color: #9a9084;
 }
 
-.nav #menu #logout {
+.nav #mobile-nav-body #logout {
   color: #1e1e1e;
 }
 
-@media screen and (min-width: 768px) {
-  .nav .title {
+@media screen and (min-width: 992px) {
+  .nav {
+    /* RWD settings */
+    /* RWD settings (end) */
+  }
+  .nav .pc {
+    display: block;
+  }
+  .nav .mobile {
+    display: none;
+  }
+  .nav .nav-head {
+    background-color: #efeae6;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .nav .info {
+  .nav .nav-head .pc-background {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #1e1e1e;
+    height: 60px;
+    border-radius: 0 80px 80px 0;
+    padding-left: 5%;
   }
-  .nav .info .profile {
+  .nav .nav-head .pc-background img {
+    height: 28px;
+  }
+  .nav .nav-head .pc-background .system-name {
+    margin-top: 0;
+  }
+  .nav .nav-head .pc-background .system-name p {
+    margin: 0 30px;
+    font-size: 24px;
+  }
+  .nav .nav-head .profile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 5%;
   }
-  .nav .info .profile > * {
+  .nav .nav-head .profile p {
     margin-right: 20px;
     color: #9f784f;
+  }
+  .nav .nav-head .profile #logout {
+    color: #1e1e1e;
   }
 }
