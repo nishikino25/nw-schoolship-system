@@ -1,0 +1,85 @@
+@import "global";
+
+.nav {
+  .title {
+    background-color: $secondary-color;
+    padding: 10px;
+
+    .menu-toggle {
+      display: flex;
+
+      p {
+        color: $info-color;
+        font-size: 18px;
+        margin-top: 10px;
+        flex-grow: 1;
+      }
+
+      #toggle-button {
+        background-color: transparent;
+        background-image: url("../img/nav/hambuger.svg");
+        border: 0;
+        width: 24px;
+        height: 24px;
+
+        &.close {
+          background-image: url("../img/nav/close.svg");
+        }
+      }
+    }
+  }
+
+  #menu {
+    &.hidden {
+      display: none;
+    }
+
+    text-align: center;
+    box-shadow: $default-showdow;
+    padding: 30px;
+
+    .functional-tabs {
+      border-bottom: $info-color 2px solid;
+
+      & > * {
+        display: block;
+        margin-bottom: 20px;
+        color: $secondary-color;
+
+        &.active {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .profile {
+      & > * {
+        display: block;
+        margin: 20px 0;
+        color: $info-color;
+      }
+    }
+
+    #logout {
+      color: $secondary-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .title {
+      display: flex;
+    }
+
+    .info {
+      display: flex;
+
+      .profile {
+        display: flex;
+        & > * {
+          margin-right: 20px;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<div class="nav">
+  <div class="title">
+    <img src="/img/nav/logo.svg" alt="ntust-logo" />
+    <div class="menu-toggle">
+      <p>服務學習獎學金系統</p>
+      <button id="toggle-button" onclick="toggleMenu()"></button>
+    </div>
+  </div>
+  <div id="menu" class="hidden">
+    <div class="info">
+      <div class="functional-tabs">
+        <a href="/schoolship-application">獎學金申請</a>
+        <a href="/schoolship-statistics" class="active">獎學金統計</a>
+        <a href="#">學習時數統計及抵免</a>
+      </div>
+      <div class="profile">
+        <p>王小明</p>
+        <p>資訊管理系</p>
+        <p>B10709000</p>
+      </div>
+      <a id="logout" href="#">登出</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleMenu(event) {
+    const menu = document.getElementById("menu");
+    const toggleButton = document.getElementById("toggle-button");
+    toggleButton.classList.toggle("close");
+    menu.classList.toggle("hidden");
+  }
+</script>
