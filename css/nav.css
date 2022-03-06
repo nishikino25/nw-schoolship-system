@@ -147,7 +147,7 @@ body {
 }
 
 /* global style (end) */
-  /* RWD settings */
+/* RWD settings */
 .pc {
   display: none;
 }
@@ -158,8 +158,8 @@ body {
 
 @media screen and (min-width: 992px) {
   .pc {
-  display: block;
-}
+    display: block;
+  }
   .mobile {
     display: none;
   }
@@ -181,12 +181,12 @@ body {
   margin-top: 10px;
 }
 
-.nav .nav-head .system-name p {
+.nav .nav-head .system-name h1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   color: #9a9084;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .nav .nav-head .system-name #mobile-menu-toggle-button {
@@ -265,9 +265,9 @@ body {
   .nav .nav-head .pc-background .system-name {
     margin-top: 0;
   }
-  .nav .nav-head .pc-background .system-name p {
+  .nav .nav-head .pc-background .system-name h1 {
     margin: 0 30px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .nav .nav-head .profile {
     display: -webkit-box;

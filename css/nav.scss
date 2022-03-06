@@ -6,13 +6,13 @@ body {
 }
 /* global style (end) */
 
-  /* RWD settings */
-  .pc {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
+/* RWD settings */
+.pc {
+  display: none;
+}
+.mobile {
+  display: block;
+}
 
 @media screen and (min-width: 992px) {
   .pc {
@@ -22,8 +22,9 @@ body {
     display: none;
   }
 }
-  /* RWD settings (end) */
+/* RWD settings (end) */
 
+.nav {
   .nav-head {
     background-color: $secondary-color;
 
@@ -35,10 +36,10 @@ body {
       display: flex;
       margin-top: 10px;
 
-      p {
+      h1 {
         flex-grow: 1;
         color: $info-color;
-        font-size: 18px;
+        font-size: 1.2rem;
       }
 
       #mobile-menu-toggle-button {
@@ -113,9 +114,9 @@ body {
         .system-name {
           margin-top: 0;
 
-          p {
+          h1 {
             margin: 0 30px;
-            font-size: 24px;
+            font-size: 1.5rem;
           }
         }
       }
