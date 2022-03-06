@@ -1,6 +1,11 @@
 @import "global";
 
-.nav {
+/* global style */
+body {
+  background-color: $backgound-color;
+}
+/* global style (end) */
+
   /* RWD settings */
   .pc {
     display: none;
@@ -8,6 +13,15 @@
   .mobile {
     display: block;
   }
+
+@media screen and (min-width: 992px) {
+  .pc {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
   /* RWD settings (end) */
 
   .nav-head {
@@ -78,15 +92,6 @@
   }
 
   @media screen and (min-width: 992px) {
-    /* RWD settings */
-    .pc {
-      display: block;
-    }
-    .mobile {
-      display: none;
-    }
-    /* RWD settings (end) */
-
     .nav-head {
       background-color: $backgound-color;
       height: 80px;

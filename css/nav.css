@@ -137,19 +137,35 @@ a {
   text-decoration: none;
 }
 
-.nav {
-  /* RWD settings */
-  /* RWD settings (end) */
+* {
+  font-size: 16px;
 }
 
-.nav .pc {
+/* global style */
+body {
+  background-color: #efeae6;
+}
+
+/* global style (end) */
+  /* RWD settings */
+.pc {
   display: none;
 }
 
-.nav .mobile {
+.mobile {
   display: block;
 }
 
+@media screen and (min-width: 992px) {
+  .pc {
+  display: block;
+}
+  .mobile {
+    display: none;
+  }
+}
+
+/* RWD settings (end) */
 .nav .nav-head {
   background-color: #1e1e1e;
 }
@@ -221,16 +237,6 @@ a {
 }
 
 @media screen and (min-width: 992px) {
-  .nav {
-    /* RWD settings */
-    /* RWD settings (end) */
-  }
-  .nav .pc {
-    display: block;
-  }
-  .nav .mobile {
-    display: none;
-  }
   .nav .nav-head {
     background-color: #efeae6;
     height: 80px;
