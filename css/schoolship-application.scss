@@ -1,0 +1,11 @@
+@import "global";
+
+.schoolship-application {
+  .input-title {
+    @include solid();
+  }
+
+  .info-title {
+    @include solid($primary-color, $secondary-color);
+  }
+}

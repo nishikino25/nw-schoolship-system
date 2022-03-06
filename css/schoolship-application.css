@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -91,6 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +105,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,36 +127,38 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 a {
   text-decoration: none;
 }
 
-$primary-color: #9f784f;
-$secondary-color: #1e1e1e;
-$backgound-color: #efeae6;
-$info-color: #9a9084;
+* {
+  font-size: 16px;
+}
 
-$default-showdow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-
-@mixin solid(
-  $color: white,
-  $background-color: $primary-color,
-  $padding: 0.8rem 0
-) {
+.schoolship-application .input-title {
   width: 500px;
   text-align: center;
   font-size: 1.5rem;
-  color: $color;
-  background-color: $background-color;
+  color: white;
+  background-color: #9f784f;
   border-radius: 25px;
-  padding: $padding;
+  padding: 0.8rem 0;
   margin: 100px auto 80px;
 }
 
-* {
-  font-size: 16px;
+.schoolship-application .info-title {
+  width: 500px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #9f784f;
+  background-color: #1e1e1e;
+  border-radius: 25px;
+  padding: 0.8rem 0;
+  margin: 100px auto 80px;
 }
