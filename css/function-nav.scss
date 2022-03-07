@@ -1,0 +1,17 @@
+@import "global";
+
+.function-nav {
+  text-align: center;
+  margin-top: 60px;
+
+  a {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin: 0 25px;
+    padding-bottom: 2px;
+
+    &.active {
+      border-bottom: $primary-color solid 2px;
+    }
+  }
+}

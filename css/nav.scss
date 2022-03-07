@@ -1,0 +1,141 @@
+@import "global";
+
+/* global style */
+body {
+  background-color: $backgound-color;
+}
+/* global style (end) */
+
+/* RWD settings */
+.pc {
+  display: none;
+}
+.mobile {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .pc {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+/* RWD settings (end) */
+
+.nav {
+  .nav-head {
+    background-color: $secondary-color;
+
+    .pc-background {
+      padding: 10px;
+    }
+
+    .system-name {
+      display: flex;
+      margin-top: 10px;
+
+      h1 {
+        flex-grow: 1;
+        color: $info-color;
+        font-size: 1.2rem;
+      }
+
+      #mobile-menu-toggle-button {
+        background-color: transparent;
+        background-image: url("../img/nav/hambuger.svg");
+        border: 0;
+        width: 18px;
+        height: 18px;
+
+        &.close {
+          background-image: url("../img/nav/close.svg");
+        }
+      }
+    }
+  }
+
+  #mobile-nav-body {
+    &.hidden {
+      display: none;
+    }
+
+    text-align: center;
+    box-shadow: $default-showdow;
+    padding: 30px;
+
+    .functional-tabs {
+      border-bottom: $info-color 2px solid;
+
+      & > * {
+        display: block;
+        margin-bottom: 20px;
+        color: $secondary-color;
+
+        &.active {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .profile {
+      & > * {
+        display: block;
+        margin: 20px 0;
+        color: $info-color;
+      }
+    }
+
+    #logout {
+      color: $secondary-color;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .nav-head {
+      background-color: $backgound-color;
+      height: 80px;
+      display: flex;
+      align-items: center;
+
+      .pc-background {
+        display: flex;
+        align-items: center;
+        background-color: $secondary-color;
+        height: 60px;
+        border-radius: 0 80px 80px 0;
+        padding-left: 5%;
+
+        img {
+          height: 28px;
+        }
+
+        .system-name {
+          margin-top: 0;
+
+          h1 {
+            margin: 0 30px;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .profile {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        margin-right: 5%;
+
+        p {
+          margin-right: 20px;
+          color: $primary-color;
+        }
+
+        #logout {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

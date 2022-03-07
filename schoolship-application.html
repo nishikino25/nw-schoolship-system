@@ -14,12 +14,19 @@
   </head>
   <body>
     <div id="nav"></div>
-    <div id="notification">content</div>
+    <div id="function-nav"></div>
+
+    <div class="schoolship-application">
+      <h2 class="input-title">服務學習表單資訊</h2>
+      <!-- TODO ... -->
+      <h2 class="input-title">時數填寫</h2>
+      <h2 class="info-title">獎學金明細</h2>
+    </div>
 
     <script>
       $(function () {
+        $("#function-nav").load("/layout/function-nav.html");
         $("#nav").load("/layout/nav.html");
-        $("#notification").load("/Schoolship-notice.html");
       });
     </script>
   </body>
