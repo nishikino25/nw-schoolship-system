@@ -1,0 +1,48 @@
+body{
+    background: #E5E5E5;
+}
+
+.list{
+    width: 100vw;
+    text-align: center;
+
+    /*flex置中:垂直、水平、排列方式*/
+    display: inline-flex;
+    
+}
+.list_background{
+    background: #9F784F;
+    width: 30px;
+    height: 30px;
+    border-radius:  25px;
+
+    display: flex;
+
+}
+
+.list_number{
+    margin:auto;
+    color: #EFEAE6;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.list_text{
+    height: 30px;
+    display: flex;
+    
+    font-family: Noto Sans CJK TC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
