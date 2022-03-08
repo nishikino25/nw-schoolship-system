@@ -141,7 +141,7 @@ a {
   font-size: 16px;
 }
 
-.schoolship-application .input-title {
+#schoolship-application .input-title {
   width: 500px;
   text-align: center;
   font-size: 1.5rem;
@@ -152,7 +152,7 @@ a {
   margin: 100px auto 80px;
 }
 
-.schoolship-application .info-title {
+#schoolship-application .info-title {
   width: 500px;
   text-align: center;
   font-size: 1.5rem;
@@ -161,4 +161,140 @@ a {
   border-radius: 25px;
   padding: 0.8rem 0;
   margin: 100px auto 80px;
+}
+
+#schoolship-application .text {
+  color: #9f784f;
+}
+
+#schoolship-application .text.sm {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+#schoolship-application #service-form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#schoolship-application #service-form-info table {
+  width: 60%;
+  margin: 2rem;
+}
+
+#schoolship-application #service-form-info table th {
+  width: 20%;
+  color: #1e1e1e;
+  text-align: left;
+  vertical-align: top;
+  padding: 25px 0;
+}
+
+#schoolship-application #service-form-info table td {
+  padding: 20px 0;
+}
+
+#schoolship-application #service-form-info table td select {
+  color: #9a9084;
+  border: transparent;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#schoolship-application #service-form-info table td select#service-unit {
+  width: 80%;
+}
+
+#schoolship-application #service-form-info table td #year-and-month {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#schoolship-application #service-form-info table td #year-and-month > select {
+  width: 45%;
+}
+
+#schoolship-application #service-form-info table td #year-and-month > span.spliter {
+  display: inline-block;
+  color: #9a9084;
+}
+
+#schoolship-application #service-form-info table td > textarea,
+#schoolship-application #service-form-info table td > input[type="text"] {
+  color: #1e1e1e;
+  border: transparent;
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#schoolship-application #service-form-info table td > textarea::-webkit-input-placeholder,
+#schoolship-application #service-form-info table td > input[type="text"]::-webkit-input-placeholder {
+  color: #9a9084;
+}
+
+#schoolship-application #service-form-info table td > textarea:-ms-input-placeholder,
+#schoolship-application #service-form-info table td > input[type="text"]:-ms-input-placeholder {
+  color: #9a9084;
+}
+
+#schoolship-application #service-form-info table td > textarea::-ms-input-placeholder,
+#schoolship-application #service-form-info table td > input[type="text"]::-ms-input-placeholder {
+  color: #9a9084;
+}
+
+#schoolship-application #service-form-info table td > textarea::placeholder,
+#schoolship-application #service-form-info table td > input[type="text"]::placeholder {
+  color: #9a9084;
+}
+
+#schoolship-application #service-form-info table tr {
+  border-bottom: 1px solid #9a9084;
+}
+
+#schoolship-application #service-form-info table tr:last-child {
+  border-bottom: 0;
+}
+
+#schoolship-application #service-form-info .functional-button-group {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#schoolship-application #service-form-info .functional-button-group button {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+}
+
+#schoolship-application #service-form-info .functional-button-group button img {
+  margin-right: 5px;
 }
