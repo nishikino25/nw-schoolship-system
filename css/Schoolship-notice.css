@@ -1,9 +1,11 @@
 body{
-    background: #E5E5E5;
+    /* background: #E5E5E5; */
 
 }
 
 .context{
+    background: #E5E5E5;
+
     /*flex置中:垂直、水平、排列方式*/
     display:flex;
     /* justify-content: center; */
@@ -89,3 +91,19 @@ body{
 .btn_agree:hover {
     background-color: #1E1E1E;
   }
+
+@media screen and (max-width:1024px) { 
+    .list{
+        width: 90vw;
+        padding: 5px;
+    }
+    .context{
+        background: #0FF;
+    }
+}
+
+@media screen and (max-width:768px) { 
+    .context{
+        background: #FF0;
+    }
+}
