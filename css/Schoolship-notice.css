@@ -1,11 +1,5 @@
-body{
-    /* background: #E5E5E5; */
-
-}
-
 .context{
-    background: #E5E5E5;
-
+    background: #EFEAE6;
     /*flex置中:垂直、水平、排列方式*/
     display:flex;
     /* justify-content: center; */
@@ -78,7 +72,7 @@ body{
     color: #EFEAE6;
     height: 44px;
     width: 180px;
-    margin: 10px;
+    margin: 40px;
     text-align: center;
 
     font-family: Noto Sans CJK TC;
@@ -93,17 +87,25 @@ body{
   }
 
 @media screen and (max-width:1024px) { 
+    .notice{
+        width: 90vw;
+    }
     .list{
         width: 90vw;
         padding: 5px;
     }
-    .context{
-        background: #0FF;
-    }
+    
 }
 
-@media screen and (max-width:768px) { 
-    .context{
-        background: #FF0;
+@media screen and (max-width:768px) {
+    .list{
+        width: 95vw;
+        padding: 2px;
     }
+    .list{
+        width: 85vw;
+    }
+    /* .context{
+        background: #FF0;
+    } */
 }
