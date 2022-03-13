@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<<<<<<< HEAD
-<head>
+<<<<<<< HEAD <head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script>
@@ -10,115 +9,116 @@
       $("head").load("/layout/head.html");
     });
   </script>
-</head>
+  </head>
 
-<body>
-  <div id="nav"></div>
-  <div id="function-nav"></div>
+  <body>
+    <div id="nav"></div>
+    <div id="function-nav"></div>
 
-  <div id="schoolship-statistics">
-    <h2 class="input-title-1">查詢條件</h2>
-    <div id="service-form-search">
-      <table>
-        <tr>
-          <th id="year">年度</th>
-          <th id="month">月份</th>
-          <th id="department">服務單位</th>
-          <th></th>
-        </tr>
-        <tr>
-          <td>
-            <select id="search-year">
-              <option selected value="110">110</option>
-              <option value="111">111</option>
-            </select>
-          </td>
-          <td>
-            <select id="search-month">
-              <option selected value="1">1</option>GIT
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-          </td>
-          <td>
-            <select name="service-unit" id="service-unit">
-              <option selected value="">（請選擇）</option>
-              <option value="service-unit-1">service-unit-1</option>
-              <option value="service-unit-2">service-unit-2</option>
-            </select>
-          </td>
-          <td>
-            <button><img src="/img/statistics-page/search.svg" alt="search">搜尋</button>
-          </td>
-        </tr>
-      </table>
+    <div id="schoolship-statistics">
+      <h2 class="input-title-1">查詢條件</h2>
+      <div id="service-form-search">
+        <table>
+          <tr>
+            <th id="year">年度</th>
+            <th id="month">月份</th>
+            <th id="department">服務單位</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>
+              <select id="search-year">
+                <option selected value="110">110</option>
+                <option value="111">111</option>
+              </select>
+            </td>
+            <td>
+              <select id="search-month">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </td>
+            <td>
+              <select name="service-unit" id="service-unit">
+                <option selected value="">（請選擇）</option>
+                <option value="service-unit-1">service-unit-1</option>
+                <option value="service-unit-2">service-unit-2</option>
+              </select>
+            </td>
+            <td>
+              <button><img src="/img/statistics-page/search.svg" alt="search">搜尋</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <h2 class="input-title-2">查詢結果</h2>
+
+      <div id="service-form-result">
+        <table>
+          <tr>
+            <th id="year">年</th>
+            <th id="month">月</th>
+            <th id="department">工讀單位</th>
+            <th id="hour">時數</th>
+            <th id="subtotal">小記</th>
+          </tr>
+          <tr>
+            <td>110</td>
+            <td>09</td>
+            <td>電子計算中心</td>
+            <td>20</td>
+            <td>3200</td>
+          </tr>
+          <tr>
+            <td>110</td>
+            <td>09</td>
+            <td>電子計算中心</td>
+            <td>20</td>
+            <td>3200</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td id="total">總計</td>
+            <td>40</td>
+            <td>6400</td>
+          </tr>
+        </table>
+      </div>
     </div>
-
-    <h2 class="input-title-2">查詢結果</h2>
-
-    <div id="service-form-result">
-      <table>
-        <tr>
-          <th id="year">年</th>
-          <th id="month">月</th>
-          <th id="department">工讀單位</th>
-          <th id="hour">時數</th>
-          <th id="subtotal">小記</th>
-        </tr>
-        <tr>
-          <td>110</td>
-          <td>09</td>
-          <td>電子計算中心</td>
-          <td>20</td>
-          <td>3200</td>
-        </tr>
-        <tr>
-          <td>110</td>
-          <td>09</td>
-          <td>電子計算中心</td>
-          <td>20</td>
-          <td>3200</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td id="total">總計</td>
-          <td>40</td>
-          <td>6400</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <script>
-    $(function () {
-      $("#function-nav").load("/layout/function-nav.html");
-      $("#nav").load("/layout/nav.html");
-    });
-  </script>
-</body>
-
-</html>
-=======
-    <div id="schoolship-statistics">...</div>
-    <div id="footer"></div>
 
     <script>
       $(function () {
         $("#function-nav").load("/layout/function-nav.html");
         $("#nav").load("/layout/nav.html");
-        $("#footer").load("/layout/footer.html");
       });
     </script>
   </body>
+
+</html>
+=======
+<div id="schoolship-statistics">...</div>
+<div id="footer"></div>
+
+<script>
+  $(function () {
+    $("#function-nav").load("/layout/function-nav.html");
+    $("#nav").load("/layout/nav.html");
+    $("#footer").load("/layout/footer.html");
+  });
+</script>
+</body>
+
 </html>
 >>>>>>> 7b74959938d6adfc76fffa2e0ea1d0fe8b7ac574
