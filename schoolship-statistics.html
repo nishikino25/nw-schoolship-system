@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<<<<<<< HEAD <head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      $("head").load("/layout/head.html");
-    });
-  </script>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("head").load("/layout/head.html");
+      });
+    </script>
   </head>
 
   <body>
     <div id="nav"></div>
-    <div id="function-nav"></div>
+    <div id="functional-nav" class="pc"></div>
 
     <div id="schoolship-statistics">
       <h2 class="page-title mobile">獎學金統計</h2>
@@ -57,7 +59,9 @@
               </select>
             </td>
             <td>
-              <button><img src="/img/statistics-page/search.svg" alt="search">搜尋</button>
+              <button>
+                <img src="/img/statistics-page/search.svg" alt="search" />搜尋
+              </button>
             </td>
           </tr>
         </table>
@@ -99,27 +103,14 @@
       </div>
     </div>
 
+    <div id="footer"></div>
+
     <script>
       $(function () {
-        $("#function-nav").load("/layout/function-nav.html");
+        $("#functional-nav").load("/layout/functional-nav.html");
         $("#nav").load("/layout/nav.html");
+        $("#footer").load("/layout/footer.html");
       });
     </script>
   </body>
-
 </html>
-=======
-<div id="schoolship-statistics">...</div>
-<div id="footer"></div>
-
-<script>
-  $(function () {
-    $("#function-nav").load("/layout/function-nav.html");
-    $("#nav").load("/layout/nav.html");
-    $("#footer").load("/layout/footer.html");
-  });
-</script>
-</body>
-
-</html>
->>>>>>> 7b74959938d6adfc76fffa2e0ea1d0fe8b7ac574

@@ -1,0 +1,32 @@
+@import "global";
+
+#functional-nav.pc {
+  text-align: center;
+  margin-top: 60px;
+
+  a {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin: 0 25px;
+    padding-bottom: 2px;
+
+    &.active {
+      border-bottom: $primary-color solid 2px;
+    }
+  }
+}
+
+#functional-nav.mobile > div {
+  border-bottom: $info-color 2px solid;
+  margin-bottom: 20px;
+
+  & > a {
+    display: block;
+    margin-bottom: 20px;
+    color: $secondary-color;
+
+    &.active {
+      color: $primary-color;
+    }
+  }
+}

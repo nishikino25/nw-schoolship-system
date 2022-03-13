@@ -14,7 +14,7 @@
   </head>
   <body>
     <div id="nav"></div>
-    <div id="function-nav"></div>
+    <div id="functional-nav" class="pc"></div>
 
     <div id="schoolship-application">
       <h2 class="page-title mobile">獎學金申請</h2>
@@ -127,8 +127,8 @@
                 <tr>
                   <td>
                     <select name="hour" id="hour">
-                      <option selected value="110">110</option>
-                      <option value="111">111</option>
+                      <option selected value="08">08</option>
+                      <option value="09">09</option>
                     </select>
                     <select name="minute" id="minute">
                       <option selected value="00">00</option>
@@ -136,12 +136,12 @@
                     </select>
                     <span class="spliter">~</span>
                     <select name="hour" id="hour">
-                      <option selected value="110">110</option>
-                      <option value="111">111</option>
+                      <option selected value="08">08</option>
+                      <option value="09">09</option>
                     </select>
                     <select name="minute" id="minute">
-                      <option selected value="11">11</option>
-                      <option value="12">12</option>
+                      <option selected value="00">00</option>
+                      <option value="30">30</option>
                     </select>
                   </td>
                 </tr>
@@ -203,8 +203,8 @@
 
     <script>
       $(function () {
-        $("#function-nav").load("/layout/function-nav.html");
         $("#nav").load("/layout/nav.html");
+        $("#functional-nav").load("/layout/functional-nav.html");
         $("#footer").load("/layout/footer.html");
       });
     </script>
