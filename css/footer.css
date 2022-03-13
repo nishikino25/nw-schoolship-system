@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -91,6 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +105,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,62 +127,69 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 a {
   text-decoration: none;
 }
 
-$primary-color: #9f784f;
-$secondary-color: #1e1e1e;
-$backgound-color: #efeae6;
-$info-color: #9a9084;
-$text-color: #595957;
-
-$default-showdow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-$default-border: solid 1px $info-color;
-
-@mixin solid(
-  $color: white,
-  $background-color: $primary-color,
-  $padding: 0.8rem 0
-) {
-  width: 100%;
-  text-align: center;
-  font-size: 1.2rem;
-  color: $color;
-  background-color: $background-color;
-  border-radius: 25px;
-  padding: $padding;
-  margin: 20px 0;
-
-  @media screen and (min-width: 1024px) {
-    margin: 100px auto 80px;
-    width: 500px;
-  }
-}
-
-@mixin default-select($width: auto, $color: $info-color, $padding: 5px) {
-  color: $color;
-  border: transparent;
-  padding: $padding;
-  border-radius: 5px;
-  width: $width;
-}
-
-@mixin default-button($background-color: transparent) {
-  background-color: $background-color;
-  display: flex;
-  justify-content: center;
-  border: 0;
-
-  img {
-    margin-right: 5px;
-  }
-}
-
 * {
   font-size: 16px;
+}
+
+body {
+  position: relative;
+  min-height: 80vh;
+  padding-bottom: 20vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .info {
+  padding: 40px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+footer .info span {
+  color: #9a9084;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 200px;
+  }
+  footer .info {
+    margin: auto 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .info span {
+    font-size: 0.8rem;
+    margin-left: 30px;
+  }
+  footer #backgroud-image {
+    float: left;
+  }
 }
