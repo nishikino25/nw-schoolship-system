@@ -1,0 +1,168 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-size: 16px;
+  font-family: Noto Sans CJK TC;
+}
+
+.input-title-1 {
+  width: 500px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #9f784f;
+  border-radius: 25px;
+  padding: 0.8rem 0;
+  margin: 100px auto 80px;
+}
+
+#service-form-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#service-form-search table {
+  width: 60%;
+  margin: 2rem;
+}
+
+#service-form-search table th {
+  width: 20%;
+  color: #1e1e1e;
+  text-align: left;
+  vertical-align: top;
+  padding: 25px 0;
+}
+#service-form-search table th#department {
+  width: 50%;
+}
+
+#service-form-search table td {
+  padding: 20px 0;
+}
+
+#service-form-search table td select {
+  width: 80%;
+  color: #9a9084;
+  border: transparent;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#service-form-search table td select#search-month {
+  width: 50%;
+}
+
+#service-form-search table tr {
+  border-bottom: 1px solid #9a9084;
+}
+
+#service-form-search table tr:last-child {
+  border-bottom: 0;
+}
+
+button {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+
+img {
+  margin-right: 5px;
+}
+
+.input-title-2 {
+  width: 500px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #9f784f;
+  background-color: #1e1e1e;
+  border-radius: 25px;
+  padding: 0.8rem 0;
+  margin: 80px auto 80px;
+}
+
+#service-form-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#service-form-result table {
+  width: 60%;
+  margin: 2rem;
+}
+
+#service-form-result table th {
+  color: #1e1e1e;
+  text-align: left;
+  vertical-align: top;
+  padding: 25px 0;
+}
+
+#service-form-result table th#year {
+  width: 10%;
+}
+#service-form-result table th#month {
+  width: 20%;
+}
+#service-form-result table th#department {
+  width: 25%;
+}
+#service-form-result table th#hour {
+  width: 20%;
+}
+#service-form-result table th#subtotal {
+  width: 10%;
+}
+
+#service-form-result table td {
+  padding: 20px 0;
+}
+
+#service-form-result table td select {
+  color: #9a9084;
+  border: transparent;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#service-form-result table td select #service-unit {
+  width: 80%;
+}
+
+#service-form-result table tr {
+  border-bottom: 1px solid #9a9084;
+}
+
+#service-form-result table tr:last-child {
+  border-bottom: 0;
+}
+
+#total {
+  padding-right: 40px !important;
+  text-align: right;
+}
