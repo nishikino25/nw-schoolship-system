@@ -141,18 +141,33 @@ a {
   font-size: 16px;
 }
 
-.function-nav {
+#functional-nav.pc {
   text-align: center;
   margin-top: 60px;
 }
 
-.function-nav a {
+#functional-nav.pc a {
   color: #1e1e1e;
   font-size: 1.2rem;
   margin: 0 25px;
   padding-bottom: 2px;
 }
 
-.function-nav a.active {
+#functional-nav.pc a.active {
   border-bottom: #9f784f solid 2px;
+}
+
+#functional-nav.mobile > div {
+  border-bottom: #9a9084 2px solid;
+  margin-bottom: 20px;
+}
+
+#functional-nav.mobile > div > a {
+  display: block;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+#functional-nav.mobile > div > a.active {
+  color: #9f784f;
 }

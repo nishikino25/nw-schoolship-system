@@ -1,4 +1,4 @@
-<div class="function-nav pc">
+<div class="functional-nav">
   <a href="/schoolship-application.html">獎學金申請</a>
   <a href="/schoolship-statistics.html">獎學金統計</a>
   <a href="#">學習時數統計及抵免</a>
@@ -6,9 +6,10 @@
 
 <script>
   var pathname = window.location.pathname;
-  const aa = document.getElementsByTagName("a");
+  var links = document.getElementsByTagName("a");
 
   for (var i = 0; i < 3; i++) {
-    if (aa[i].getAttribute("href") === pathname) aa[i].classList.add("active");
+    if (links[i].getAttribute("href") === pathname)
+      links[i].classList.add("active");
   }
 </script>
