@@ -14,12 +14,14 @@
   </head>
   <body>
     <div id="nav"></div>
-    <div id="notification">content</div>
+    <div id="function-nav"></div>
+
+    <div id="schoolship-statistics">...</div>
 
     <script>
       $(function () {
+        $("#function-nav").load("/layout/function-nav.html");
         $("#nav").load("/layout/nav.html");
-        $("#notification").load("/schoolship-notice.html");
       });
     </script>
   </body>

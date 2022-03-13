@@ -16,11 +16,74 @@
     <div id="nav"></div>
     <div id="function-nav"></div>
 
-    <div class="schoolship-application">
+    <div id="schoolship-application">
       <h2 class="input-title">服務學習表單資訊</h2>
-      <!-- TODO ... -->
+      <div id="service-form-info">
+        <p class="text">同一年月同一單位只能有一份申請單，申請之後只能修改或刪除</p>
+
+        <table>
+            <tr>
+              <th>單號</td>
+              <td>B10509012-1101124140000</td>
+            </tr>
+            <tr>
+              <th><label for="service-unit">服務單位</label></td>
+              <td>
+                <select name="service-unit" id="service-unit">
+                  <option selected value="">（請選擇）</option>
+                  <option value="service-unit-1">service unit 1</option>
+                  <option value="service-unit-2">service unit 2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="year">年度</label> / <label for="month">月份</label></td>
+              <td>
+                <div id="year-and-month">
+                  <select name="year" id="year">
+                    <option selected value="110">110</option>
+                    <option value="111">111</option>
+                  </select>
+                  <span class="spliter">/</span>
+                  <select name="month" id="month">
+                    <option selected value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="work-content">工作內容</label></th>
+              <td>
+                <textarea id="work-content" name="work-content" placeholder="限輸入100字元" maxlength="100" rows="3"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="post-number">郵局局號</label></th>
+              <td>
+                <input type="text" id="post-number" name="post-number" placeholder="格式：12345671234567">
+                <p class="text sm">事局帳競未填，格式有誤或非本人帳戶(可態無法順利入帳)，請至基本學籍資料憲修正。</p>
+              </td>
+            </tr>
+            <tr>
+              <th>戶籍地址</th>
+              <td>
+                <p>106335 臺北OOOOOOOO OOOOOOOO</p>
+                <p class="text sm">戸籍地址未填或未包含縣、市、里、鄰，請带證明文至教務處更改。</p>
+              </td>
+            </tr>
+        </table>
+        <div class="functional-button-group">
+          <button><img src="/img/apply-page/generate.svg" alt="generate">產生</button>
+          <button><img src="/img/apply-page/revise.svg" alt="revise">修改</button>
+          <button><img src="/img/apply-page/remove.svg" alt="remove">刪除</button>
+          <button><img src="/img/apply-page/copy.svg" alt="copy">列印</button>
+        </div>
+      </div>
       <h2 class="input-title">時數填寫</h2>
+      <div id="hour-input"></div>
       <h2 class="info-title">獎學金明細</h2>
+      <div id="schoolship-detail"></div>
     </div>
 
     <script>

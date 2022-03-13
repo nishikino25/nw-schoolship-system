@@ -1,11 +1,108 @@
 @import "global";
 
-.schoolship-application {
+#schoolship-application {
   .input-title {
     @include solid();
   }
 
   .info-title {
     @include solid($primary-color, $secondary-color);
+  }
+
+  .text {
+    color: $primary-color;
+
+    &.sm {
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+  }
+
+  #service-form-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    table {
+      width: 60%;
+      margin: 2rem;
+
+      th {
+        width: 20%;
+        color: $secondary-color;
+        text-align: left;
+        vertical-align: top;
+        padding: 25px 0;
+      }
+
+      td {
+        padding: 20px 0;
+
+        select {
+          color: $info-color;
+          border: transparent;
+          padding: 5px;
+          border-radius: 5px;
+
+          &#service-unit {
+            width: 80%;
+          }
+        }
+
+        #year-and-month {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          & > select {
+            width: 45%;
+          }
+          & > span.spliter {
+            display: inline-block;
+            color: $info-color;
+          }
+        }
+
+        & > textarea,
+        & > input[type="text"] {
+          color: $secondary-color;
+          border: transparent;
+          width: 80%;
+          padding: 5px;
+          border-radius: 5px;
+          box-sizing: border-box;
+
+          &::placeholder {
+            color: $info-color;
+          }
+        }
+      }
+
+      tr {
+        border-bottom: 1px solid $info-color;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .functional-button-group {
+      width: 25%;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        border: 0;
+
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
   }
 }
