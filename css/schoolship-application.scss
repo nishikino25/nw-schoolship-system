@@ -1,6 +1,12 @@
 @import "global";
 
 #schoolship-application {
+  padding: 20px;
+
+  .page-title {
+    font-size: 1.2rem;
+  }
+
   .input-title {
     @include solid();
   }
@@ -24,12 +30,12 @@
     flex-direction: column;
 
     table {
-      width: 60%;
+      width: 100%;
       margin: 2rem;
 
       th {
-        width: 20%;
-        color: $secondary-color;
+        width: 30%;
+        color: $text-color;
         text-align: left;
         vertical-align: top;
         padding: 25px 0;
@@ -37,20 +43,18 @@
 
       td {
         padding: 20px 0;
+        color: $text-color;
 
         select {
-          color: $info-color;
-          border: transparent;
-          padding: 5px;
-          border-radius: 5px;
+          @include default-select();
 
           &#service-unit {
-            width: 80%;
+            width: 100%;
           }
         }
 
         #year-and-month {
-          width: 80%;
+          width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -68,7 +72,7 @@
         & > input[type="text"] {
           color: $secondary-color;
           border: transparent;
-          width: 80%;
+          width: 100%;
           padding: 5px;
           border-radius: 5px;
           box-sizing: border-box;
@@ -89,20 +93,119 @@
     }
 
     .functional-button-group {
-      width: 25%;
+      width: 100%;
       display: flex;
       justify-content: space-between;
 
       button {
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        border: 0;
+        @include default-button();
+      }
+    }
 
-        img {
-          margin-right: 5px;
+    @media screen and (min-width: 1024px) {
+      table {
+        width: 60% !important;
+
+        th {
+          width: 20% !important;
+        }
+      }
+
+      .functional-button-group {
+        width: 30% !important;
+      }
+    }
+  }
+
+  #hour-input {
+    > section#wrappers > section {
+      margin: 20px;
+      table {
+        width: 100%;
+
+        thead > tr {
+          border-bottom: $default-border;
+        }
+
+        tr > th,
+        tr > td {
+          padding: 10px;
+          text-align: left;
+        }
+      }
+
+      &#month-day-wrapper {
+        table {
+          tr > th:first-child,
+          tr > td:first-child {
+            width: 50% !important;
+          }
+
+          select {
+            @include default-select();
+          }
+        }
+      }
+
+      &#hour-minute-wrapper {
+        select {
+          @include default-select(22%);
+        }
+      }
+
+      &#amount-wrapper {
+        table {
+          tr > th:first-child,
+          tr > td:first-child {
+            width: 50% !important;
+          }
+
+          select {
+            @include default-select();
+          }
         }
       }
     }
+
+    #add-button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      button {
+        text-align: center;
+        @include default-button();
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      > section#wrappers {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 60%;
+
+        > section {
+          margin: 0;
+
+          &#month-day-wrapper {
+            width: 15%;
+          }
+
+          &#hour-minute-wrapper {
+            width: 60%;
+          }
+
+          &#amount-wrapper {
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+
+  #info-title {
+    // TODO
   }
 }

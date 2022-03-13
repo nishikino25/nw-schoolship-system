@@ -141,26 +141,48 @@ a {
   font-size: 16px;
 }
 
+#schoolship-application {
+  padding: 20px;
+}
+
+#schoolship-application .page-title {
+  font-size: 1.2rem;
+}
+
 #schoolship-application .input-title {
-  width: 500px;
+  width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   background-color: #9f784f;
   border-radius: 25px;
   padding: 0.8rem 0;
-  margin: 100px auto 80px;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #schoolship-application .input-title {
+    margin: 100px auto 80px;
+    width: 500px;
+  }
 }
 
 #schoolship-application .info-title {
-  width: 500px;
+  width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #9f784f;
   background-color: #1e1e1e;
   border-radius: 25px;
   padding: 0.8rem 0;
-  margin: 100px auto 80px;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #schoolship-application .info-title {
+    margin: 100px auto 80px;
+    width: 500px;
+  }
 }
 
 #schoolship-application .text {
@@ -186,13 +208,13 @@ a {
 }
 
 #schoolship-application #service-form-info table {
-  width: 60%;
+  width: 100%;
   margin: 2rem;
 }
 
 #schoolship-application #service-form-info table th {
-  width: 20%;
-  color: #1e1e1e;
+  width: 30%;
+  color: #595957;
   text-align: left;
   vertical-align: top;
   padding: 25px 0;
@@ -200,6 +222,7 @@ a {
 
 #schoolship-application #service-form-info table td {
   padding: 20px 0;
+  color: #595957;
 }
 
 #schoolship-application #service-form-info table td select {
@@ -207,14 +230,15 @@ a {
   border: transparent;
   padding: 5px;
   border-radius: 5px;
+  width: auto;
 }
 
 #schoolship-application #service-form-info table td select#service-unit {
-  width: 80%;
+  width: 100%;
 }
 
 #schoolship-application #service-form-info table td #year-and-month {
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +263,7 @@ a {
 #schoolship-application #service-form-info table td > input[type="text"] {
   color: #1e1e1e;
   border: transparent;
-  width: 80%;
+  width: 100%;
   padding: 5px;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
@@ -275,7 +299,7 @@ a {
 }
 
 #schoolship-application #service-form-info .functional-button-group {
-  width: 25%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,4 +321,121 @@ a {
 
 #schoolship-application #service-form-info .functional-button-group button img {
   margin-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  #schoolship-application #service-form-info table {
+    width: 60% !important;
+  }
+  #schoolship-application #service-form-info table th {
+    width: 20% !important;
+  }
+  #schoolship-application #service-form-info .functional-button-group {
+    width: 30% !important;
+  }
+}
+
+#schoolship-application #hour-input > section#wrappers > section {
+  margin: 20px;
+}
+
+#schoolship-application #hour-input > section#wrappers > section table {
+  width: 100%;
+}
+
+#schoolship-application #hour-input > section#wrappers > section table thead > tr {
+  border-bottom: solid 1px #9a9084;
+}
+
+#schoolship-application #hour-input > section#wrappers > section table tr > th,
+#schoolship-application #hour-input > section#wrappers > section table tr > td {
+  padding: 10px;
+  text-align: left;
+}
+
+#schoolship-application #hour-input > section#wrappers > section#month-day-wrapper table tr > th:first-child,
+#schoolship-application #hour-input > section#wrappers > section#month-day-wrapper table tr > td:first-child {
+  width: 50% !important;
+}
+
+#schoolship-application #hour-input > section#wrappers > section#month-day-wrapper table select {
+  color: #9a9084;
+  border: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+}
+
+#schoolship-application #hour-input > section#wrappers > section#hour-minute-wrapper select {
+  color: #9a9084;
+  border: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  width: 22%;
+}
+
+#schoolship-application #hour-input > section#wrappers > section#amount-wrapper table tr > th:first-child,
+#schoolship-application #hour-input > section#wrappers > section#amount-wrapper table tr > td:first-child {
+  width: 50% !important;
+}
+
+#schoolship-application #hour-input > section#wrappers > section#amount-wrapper table select {
+  color: #9a9084;
+  border: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+}
+
+#schoolship-application #hour-input #add-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#schoolship-application #hour-input #add-button button {
+  text-align: center;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+  margin-top: 20px;
+}
+
+#schoolship-application #hour-input #add-button button img {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  #schoolship-application #hour-input > section#wrappers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    width: 60%;
+  }
+  #schoolship-application #hour-input > section#wrappers > section {
+    margin: 0;
+  }
+  #schoolship-application #hour-input > section#wrappers > section#month-day-wrapper {
+    width: 15%;
+  }
+  #schoolship-application #hour-input > section#wrappers > section#hour-minute-wrapper {
+    width: 60%;
+  }
+  #schoolship-application #hour-input > section#wrappers > section#amount-wrapper {
+    width: 25%;
+  }
 }
