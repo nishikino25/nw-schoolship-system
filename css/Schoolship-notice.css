@@ -1,4 +1,4 @@
-.context {
+.schoolship-notice {
   background: #efeae6;
   /*flex置中:垂直、水平、排列方式*/
   display: flex;
@@ -98,7 +98,4 @@
   .list {
     width: 85vw;
   }
-  /* .context{
-        background: #FF0;
-    } */
 }
