@@ -85,9 +85,13 @@ a {
   border-bottom: 0;
 }
 
-button {
+#service-form-search button {
   background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: center;
   border: 0;
 }
@@ -171,8 +175,8 @@ img {
   border-bottom: 0;
 }
 
-#total {
-  padding-right: 40px !important;
+#service-form-result table td#total {
+  padding-right: 10% !important;
   text-align: right;
 }
 
@@ -221,8 +225,22 @@ img {
   }
   #service-form-search table th:last-child {
     border-bottom: 0;
+    display: none;
   }
   #service-form-search table td:last-child {
     border-bottom: 0;
+    display: none;
+  }
+
+  .input-title-2 {
+    width: 90%;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.8rem 0;
+    margin: 80px auto 20px;
+  }
+
+  #service-form-result table {
+    width: 80%;
   }
 }
