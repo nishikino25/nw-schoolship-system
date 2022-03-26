@@ -85,14 +85,14 @@ a {
   border-bottom: 0;
 }
 
-button {
+#schoolship-statistics button {
   background-color: transparent;
   display: flex;
   justify-content: center;
   border: 0;
 }
 
-img {
+#schoolship-statistics img {
   margin-right: 5px;
 }
 
