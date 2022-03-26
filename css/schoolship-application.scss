@@ -85,7 +85,7 @@
       }
 
       tr {
-        border-bottom: 1px solid $info-color;
+        border-bottom: $default-border;
 
         &:last-child {
           border-bottom: 0;
@@ -206,7 +206,91 @@
     }
   }
 
-  #info-title {
-    // TODO
+  #schoolship-detail {
+    margin: 20px 0;
+
+    .grid {
+      display: flex;
+
+      .grid-container {
+        display: grid;
+        grid-template-rows: repeat(8, 40px) 80px;
+        grid-auto-flow: column;
+        // grid-gap: 15px; // 用item的padding代替，為了讓border連貫
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        &.fixed-header {
+          text-align: right;
+          font-weight: bolder;
+          padding-right: 10px;
+          border-right: $default-border;
+          min-width: 55px;
+        }
+
+        > div {
+          padding: 5px 10px;
+
+          &.table-sum {
+            font-weight: bolder;
+            border-left: $default-border;
+
+            &.span-5 {
+              writing-mode: vertical-lr;
+              grid-row: span 5;
+            }
+          }
+
+          button {
+            background-color: transparent;
+            border: 0;
+
+            img {
+              width: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .grid {
+        flex-direction: column;
+
+        .grid-container {
+          grid-template-rows: auto;
+          grid-template-columns: repeat(8, 1fr) 80px;
+          grid-auto-flow: row;
+
+          &.fixed-header {
+            text-align: left;
+            border: 0;
+            border-bottom: $default-border;
+          }
+
+          > div {
+            padding: 20px 10px;
+
+            &.table-sum {
+              font-weight: bolder;
+              border: 0;
+              border-top: $default-border;
+
+              &.span-5 {
+                writing-mode: horizontal-tb;
+                grid-column: span 5;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .grid {
+        width: 60%;
+        margin: auto;
+      }
+    }
   }
 }

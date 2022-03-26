@@ -292,7 +292,7 @@ a {
 }
 
 #schoolship-application #service-form-info table tr {
-  border-bottom: 1px solid #9a9084;
+  border-bottom: solid 1px #9a9084;
 }
 
 #schoolship-application #service-form-info table tr:last-child {
@@ -438,5 +438,100 @@ a {
   }
   #schoolship-application #hour-input > section#wrappers > section#amount-wrapper {
     width: 30%;
+  }
+}
+
+#schoolship-application #schoolship-detail {
+  margin: 20px 0;
+}
+
+#schoolship-application #schoolship-detail .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#schoolship-application #schoolship-detail .grid .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (40px)[8] 80px;
+      grid-template-rows: repeat(8, 40px) 80px;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#schoolship-application #schoolship-detail .grid .grid-container.fixed-header {
+  text-align: right;
+  font-weight: bolder;
+  padding-right: 10px;
+  border-right: solid 1px #9a9084;
+  min-width: 55px;
+}
+
+#schoolship-application #schoolship-detail .grid .grid-container > div {
+  padding: 5px 10px;
+}
+
+#schoolship-application #schoolship-detail .grid .grid-container > div.table-sum {
+  font-weight: bolder;
+  border-left: solid 1px #9a9084;
+}
+
+#schoolship-application #schoolship-detail .grid .grid-container > div.table-sum.span-5 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  grid-row: span 5;
+}
+
+#schoolship-application #schoolship-detail .grid .grid-container > div button {
+  background-color: transparent;
+  border: 0;
+}
+
+#schoolship-application #schoolship-detail .grid .grid-container > div button img {
+  width: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  #schoolship-application #schoolship-detail .grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #schoolship-application #schoolship-detail .grid .grid-container {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: (1fr)[8] 80px;
+        grid-template-columns: repeat(8, 1fr) 80px;
+    grid-auto-flow: row;
+  }
+  #schoolship-application #schoolship-detail .grid .grid-container.fixed-header {
+    text-align: left;
+    border: 0;
+    border-bottom: solid 1px #9a9084;
+  }
+  #schoolship-application #schoolship-detail .grid .grid-container > div {
+    padding: 20px 10px;
+  }
+  #schoolship-application #schoolship-detail .grid .grid-container > div.table-sum {
+    font-weight: bolder;
+    border: 0;
+    border-top: solid 1px #9a9084;
+  }
+  #schoolship-application #schoolship-detail .grid .grid-container > div.table-sum.span-5 {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    grid-column: span 5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #schoolship-application #schoolship-detail .grid {
+    width: 60%;
+    margin: auto;
   }
 }
