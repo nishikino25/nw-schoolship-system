@@ -318,6 +318,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   border: 0;
+  cursor: pointer;
 }
 
 #schoolship-application #service-form-info .functional-button-group button img {
@@ -408,6 +409,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   border: 0;
+  cursor: pointer;
   margin-top: 20px;
 }
 
@@ -488,6 +490,7 @@ a {
 #schoolship-application #schoolship-detail .grid .grid-container > div button {
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 }
 
 #schoolship-application #schoolship-detail .grid .grid-container > div button img {
