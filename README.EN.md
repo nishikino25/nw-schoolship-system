@@ -7,9 +7,9 @@ To enhance the user experience for students on tablets and mobile phones, the fr
 The new design supports responsive web design (RWD), making it more convenient for students to query and manage their part-time records.
 
 ## Using Tools
-.NET CORE 
-HTML
-CSS
+- .NET CORE
+- HTML
+- CSS
 
 ## Interface Overview
 ![PC-HomePage](https://github.com/user-attachments/assets/0e4bdc7d-98b5-4400-835f-89de1e0924fe)
